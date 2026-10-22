@@ -1,0 +1,24 @@
+[project]
+name = "workiq-graph-debugger"
+version = "0.1.0"
+description = "Desktop debugger that compares Microsoft Graph and WorkIQ call flows."
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "PySide6>=6.8,<7",
+    "msal>=1.34,<2",
+    "requests>=2.32.4,<3",
+    "mcp>=1.30,<2",
+    "httpx>=0.28,<1",
+    "github-copilot-sdk>=0.3,<0.4",
+    "msal-extensions>=1.3.1",
+]
+
+[dependency-groups]
+dev = [
+    "ruff>=0.17",
+]
+
+[tool.uv]
+# The app is a set of top-level modules run in place. It is not built as a wheel.
+package = false

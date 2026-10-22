@@ -1,0 +1,41 @@
+# Local environment files can contain credentials.
+.env
+.env.*
+!.env.example
+!.env.*.example
+.envrc
+
+# Logs and HTTP captures can contain tokens and Microsoft 365 content.
+*.log
+*.har
+
+# Local Python environments and caches.
+.venv/
+.ruff_cache/
+__pycache__/
+
+# Account metadata, sign-in caches, and local service configuration.
+.desktop-*.json
+.desktop-*.json.*
+msal_cache*
+token_cache*
+.msal*
+.azure/
+.aws/
+.ssh/
+.copilot/
+WorkIQGraphDebugger/
+.mcp.json
+
+# Private keys and certificate bundles.
+*.key
+*.pem
+*.pfx
+*.p12
+*.jks
+*.keystore
+id_rsa*
+id_ed25519*
+
+AGENTS.md
+uv.lock
